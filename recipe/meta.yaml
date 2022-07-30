@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/NCAR/geocat-viz/archive/v{{ version }}.tar.gz   # For building from a specific tag's tarball
-  sha256: ee20598adb7e03f04956c05a865540b547e9b356f48ca041b2aa4f581a2a84f2
+  sha256: a8840ffa8785e09084a1cbc3e7abc3e11de250e1c56c80eec363e3bbe09a2021
 
 build:
   noarch: python
