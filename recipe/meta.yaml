@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed -vv .
 
 requirements:
@@ -30,12 +30,10 @@ requirements:
 
 test:
   requires:
-    - pip
+    - pytest
   imports:
     - geocat
     - geocat.viz
-  commands:
-    - pip check
 
 about:
   home: https://geocat.ucar.edu/
