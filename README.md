@@ -1,11 +1,11 @@
-About geocat-viz
-================
+About geocat-viz-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geocat-viz-feedstock/blob/main/LICENSE.txt)
 
 Home: https://geocat.ucar.edu/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/geocat-viz-feedstock/blob/main/LICENSE.txt)
 
 Summary: GeoCAT-viz is a collection of utility functions to make Python plotting with Matplotlib and Cartopy more like NCL (NCAR Command Language).
 
