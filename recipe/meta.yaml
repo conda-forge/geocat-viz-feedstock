@@ -11,7 +11,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed -vv .
+  script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install --no-deps --ignore-installed -vv .
 
 requirements:
   host:
@@ -32,6 +32,9 @@ test:
   imports:
     - geocat
     - geocat.viz
+  commands:
+    # print package version
+    - python -c "import geocat.viz; print(geocat.viz.__version__)"
 
 about:
   home: https://geocat.ucar.edu/
@@ -44,8 +47,7 @@ about:
 extra:
   recipe-maintainers:
     - NCAR/geocat # GeoCAT https://github.com/orgs/NCAR/teams/geocat
+    - jukent # J. Kent https://github.com/jukent
     - anissa111 # A. Zacharias https://github.com/anissa111
     - erogluorhan # O. Eroglu https://github.com/erogluorhan
-    - hCraker # H. Craker https://github.com/hCraker
-    - michaelavs # M. Sizemore https://github.com/michaelavs
     - pilotchute # A. Kootz https://github.com/pilotchute
