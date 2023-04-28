@@ -150,7 +150,6 @@ Feedstock Maintainers
 * [@NCAR/geocat](https://github.com/NCAR/geocat/)
 * [@anissa111](https://github.com/anissa111/)
 * [@erogluorhan](https://github.com/erogluorhan/)
-* [@hCraker](https://github.com/hCraker/)
-* [@michaelavs](https://github.com/michaelavs/)
+* [@jukent](https://github.com/jukent/)
 * [@pilotchute](https://github.com/pilotchute/)
 
