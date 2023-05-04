@@ -1,4 +1,4 @@
-{% set version = "2023.03.0" %}
+{% set version = "2023.05.0" %}
 
 package:
   name: geocat-viz
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/NCAR/geocat-viz/archive/v{{ version }}.tar.gz   # For building from a specific tag's tarball
-  sha256: 58a9a9c164c4332f52e161a270597336555b107082ab2764db3cdd0d4b8bd0d7
+  sha256: 9895fe74c4402a5ed54029c517de7154e6720baa68982375062d49cfbade4ba0
 
 build:
   noarch: python
