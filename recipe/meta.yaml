@@ -1,4 +1,4 @@
-{% set version = "2023.03.0" %}
+{% set version = "2023.05.0" %}
 
 package:
   name: geocat-viz
@@ -6,20 +6,21 @@ package:
 
 source:
   url: https://github.com/NCAR/geocat-viz/archive/v{{ version }}.tar.gz   # For building from a specific tag's tarball
-  sha256: 58a9a9c164c4332f52e161a270597336555b107082ab2764db3cdd0d4b8bd0d7
+  sha256: 9895fe74c4402a5ed54029c517de7154e6720baa68982375062d49cfbade4ba0
 
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed -vv .
+  script: SETUPTOOLS_SCM_PRETEND_VERSION={{ version }} {{ PYTHON }} -m pip install --no-deps --ignore-installed -vv .
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.8, <3.11
     - pip
     - setuptools
+    - setuptools_scm
   run:
-    - python >=3.8
+    - python >=3.8, <3.11
     - cartopy
     - cmaps
     - matplotlib
@@ -32,6 +33,9 @@ test:
   imports:
     - geocat
     - geocat.viz
+  commands:
+    # print package version
+    - python -c "import geocat.viz; print(geocat.viz.__version__)"
 
 about:
   home: https://geocat.ucar.edu/
@@ -46,6 +50,6 @@ extra:
     - NCAR/geocat # GeoCAT https://github.com/orgs/NCAR/teams/geocat
     - anissa111 # A. Zacharias https://github.com/anissa111
     - erogluorhan # O. Eroglu https://github.com/erogluorhan
-    - hCraker # H. Craker https://github.com/hCraker
-    - michaelavs # M. Sizemore https://github.com/michaelavs
+    - jukent # J. Kent https://github.com/jukent/
+    - kafitzgerald # K. FitzGerald https://github.com/kafitzgerald
     - pilotchute # A. Kootz https://github.com/pilotchute
