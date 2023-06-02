@@ -151,6 +151,4 @@ Feedstock Maintainers
 * [@anissa111](https://github.com/anissa111/)
 * [@erogluorhan](https://github.com/erogluorhan/)
 * [@jukent](https://github.com/jukent/)
-* [@kafitzgerald](https://github.com/kafitzgerald)
-* [@pilotchute](https://github.com/pilotchute/)
-
+* [@kafitzgerald](https://github.com/kafitzgerald/)
