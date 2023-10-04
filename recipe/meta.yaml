@@ -23,7 +23,7 @@ requirements:
     - python >=3.9, <3.12
     - cartopy
     - cmaps
-    - matplotlib
+    - matplotlib<3.8
     - metpy
     - numpy
     - scikit-learn
