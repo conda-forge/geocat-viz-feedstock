@@ -15,12 +15,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9, <3.12
+    - python >=3.9, <3.13
     - pip
     - setuptools
     - setuptools_scm
   run:
-    - python >=3.9, <3.12
+    - python >=3.9, <3.13
     - cartopy
     - cmaps
     - matplotlib <3.8
