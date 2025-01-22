@@ -147,7 +147,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@NCAR/geocat](https://github.com/NCAR/geocat/)
+* [@NCAR/geocat](https://github.com/orgs/NCAR/teams/geocat/)
 * [@anissa111](https://github.com/anissa111/)
 * [@erogluorhan](https://github.com/erogluorhan/)
 * [@jukent](https://github.com/jukent/)
