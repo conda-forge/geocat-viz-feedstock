@@ -1,7 +1,9 @@
+{% set python_min = "3.10" %}
+{% set name = "geocat-viz" %}
 {% set version = "2025.03.0" %}
 
 package:
-  name: geocat-viz
+  name: {{ name }}
   version: {{ version }}
 
 source:
@@ -20,11 +22,12 @@ requirements:
     - setuptools
     - setuptools_scm
   run:
-    - python >={{ python_min }},<3.13
+    - python >={{ python_min }}
     - cartopy
     - cmaps
-    - matplotlib
+    - matplotlib-base
     - metpy
+    - pint
     - numpy
     - scikit-learn
     - xarray
@@ -32,12 +35,12 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - geocat
     - geocat.viz
   commands:
-    # print package version
-    - python -c "import geocat.viz; print(geocat.viz.__version__)"
+    - pip check
 
 about:
   home: https://geocat.ucar.edu/
