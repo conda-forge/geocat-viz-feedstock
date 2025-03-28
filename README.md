@@ -153,6 +153,3 @@ Feedstock Maintainers
 * [@jukent](https://github.com/jukent/)
 * [@kafitzgerald](https://github.com/kafitzgerald/)
 
-
-<!-- dummy commit to enable rerendering -->
-
