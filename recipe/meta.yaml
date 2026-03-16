@@ -33,7 +33,7 @@ requirements:
     - scikit-learn
     - xarray
   run_constrained:
-    - proj < 9.8.0
+    - proj <9.8.0
 
 test:
   requires:
